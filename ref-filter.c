@@ -1344,8 +1344,8 @@ static void grab_sub_body_contents(struct atom_value *val, int deref, void *buf)
 		} else if (atom->u.contents.option == C_BARE)
 			v->s = xstrdup(subpos);
 
-		free((void *)sigpos);
 	}
+	free((void *)sigpos);
 }
 
 /*
